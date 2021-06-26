@@ -29,9 +29,9 @@ console.log(x)
 const anotherFunction = () => {
   // for (let i = 0; i < 10; i++) {
   for (var i = 0; i < 10; i++) {
-    console.log('Primero', i)
+    console.log('test', i)
     setTimeout(() => {
-      console.log('setTimeout', i)
+      console.log('setTimeout', i) // Toma el valor global de i que es el ultimo valor que se le asigno en el ciclo
     }, 1000)
   }
 }
